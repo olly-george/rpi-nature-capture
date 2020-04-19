@@ -9,10 +9,8 @@ camera.rotation = 90
 
 camera.start_preview()
 
-loop = 0
-while loop < 10
+for loop in range(10)
     camera.start_recording('/home/pi/recordings/test' + loop + '.h264')
     sleep(3)
     camera.stop_recording()
-    loop++
 camera.stop_preview()
