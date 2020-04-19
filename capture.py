@@ -8,7 +8,11 @@ camera.framerate = 20
 camera.rotation = 90
 
 camera.start_preview()
-camera.start_recording('/home/pi/recordings/test3.h264')
-sleep(5)
-camera.stop_recording()
+
+loop = 0
+while loop < 10
+    camera.start_recording('/home/pi/recordings/test' + loop + '.h264')
+    sleep(3)
+    camera.stop_recording()
+    loop++
 camera.stop_preview()
