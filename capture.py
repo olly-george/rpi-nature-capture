@@ -10,7 +10,7 @@ camera.rotation = 180
 camera.start_preview()
 
 for loop in range(200):
-    camera.start_recording('/home/pi/recordings/pond' + str(loop) + '.h264')
-    sleep(45)
+    camera.start_recording('/home/pi/recordings/pondNext' + str(loop) + '.h264')
+    sleep(60)
     camera.stop_recording()
 camera.stop_preview()
