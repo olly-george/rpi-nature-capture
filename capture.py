@@ -5,7 +5,7 @@ camera = PiCamera()
 
 camera.resolution = (800, 600)
 camera.framerate = 20
-camera.rotation = 90
+camera.rotation = 180
 
 camera.start_preview()
 
